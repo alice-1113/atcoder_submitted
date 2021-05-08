@@ -1,6 +1,6 @@
 import sys
 input=sys.stdin.readline
-from itertools import combinations  # ぜったいコレが原因
+from itertools import combinations
 
 N=int(input())
 A=list(map(int,input().split()))
@@ -10,3 +10,4 @@ for a,b in combinations(A,2):
 print(d[0])
 
 # Python -> 30ms
+# ? TLE
