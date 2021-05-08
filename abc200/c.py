@@ -1,14 +1,12 @@
 import sys
 input=sys.stdin.readline
-from itertools import combinations
+from itertools import combinations  # ぜったいコレが原因
 
 N=int(input())
 A=list(map(int,input().split()))
-ans=0
-
+d = {i:0 for i in range(200)}
 for a,b in combinations(A,2):
-    if (a-b)%200 == 0:
-        ans += 1
-print(ans)
+    d[(a-b)%200]+=1
+print(d[0])
 
-# 速度が足りない?? Pypy3 -> 120ms, Python -> 30ms
+# Python -> 30ms
