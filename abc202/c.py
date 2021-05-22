@@ -1,7 +1,7 @@
 from itertools import product
+from sys import stdin
 
 def main():
-    from sys import stdin
     input=stdin.readline
     n=int(input())
     A=tuple(map(int,input().split()))
