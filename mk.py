@@ -5,7 +5,7 @@ dir_path = os.path.dirname(sys.argv[0])
 dir_name = "abc{}"
 diff = ["a", "b", "c"]
 file = "{}.py"
-for i in range(200, 300):
+for i in range(207, 210):
     mkdir_name = dir_name.format(i)
     if not os.path.exists(mkdir_name):
         os.mkdir(mkdir_name)
